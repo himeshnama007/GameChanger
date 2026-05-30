@@ -112,3 +112,131 @@ html,body{
     border-radius:50%; /* circle shape ke lie border-radius 50% hota he */
     background-color:#888;
 }
+#second{
+    color:white;
+    padding-right:10vw;
+    padding-top:200px;
+    width:100%;
+    height:100vh;
+    background-color:black;
+}
+.ele{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:2vw 4vw;
+    padding-right:0;
+    width:100%;
+    border-top:1px solid #888;
+}
+.ele h1{
+    text-transform:uppercase;
+    font-size:5vw;
+    opacity:.7;
+}
+.ele h5{
+    font-size:1vw;
+    opacity:.7;
+}
+.elelast{
+    border-bottom:1px solid #888;
+}
+.ele img{
+    opacity:0; /* image ko initially invisible rakhne ke lie opacity 0 karte he, jab animation start hoga tab opacity 1 kar denge */
+    height:140%;
+    position:absolute;
+    z-index:999;   /* image ko text ke upar lane ke lie z-index use krte he, jitna bada number hoga utna upar aayega */
+     
+
+}
+#about{
+    color:white;
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap: 8vw;
+    padding:10vw;
+    background-color:black;
+
+}
+#imageabout{
+    width:15vw;
+    height:15vw;
+    border-radius:50%;
+    background:url("/images/photo.png") no-repeat; /* background image set karne ke lie background property use krte he, no-repeat se image repeat nahi hoga */
+    background-size:cover; /* background image ko container ke size ke hisab se adjust karne ke lie background-size cover use krte he */
+    background-position:center; /* background image ko center me rakhne ke lie background-position center use krte he */
+     flex-shrink: 0;
+}
+#textabout{
+    width: 35%;
+}
+#textabout h1{
+    font-size:3vw;
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
+#textabout h5{
+    color: gray;
+    margin-bottom: 10px;
+}
+#textabout p{
+    font-size: 1.2vw;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+#textabout a{
+    color: white;
+    text-decoration: none;
+
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+#subscribe{
+    color:white;
+    background-color:black;
+    width:100%;
+    padding : 20px 30px;
+    padding-bottom:10vw;
+}
+#subscribe h5{
+    text-transform:uppercase;
+    opacity:0.6;
+
+
+}
+#subscribe h3{
+    text-transform:uppercase;
+    font-size:14px;
+    margin-top:10px;
+}
+#footer{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+    padding:20px 30px;
+    color:#fff;
+    background-color:black;
+}
+#footerleft{
+    display:flex;
+    gap:20px;
+}
+#footer a{
+    text-transform:uppercase;
+    color:#fff;
+    font-size:14px;
+    font-weight:500px;
+    text-decoration:none;
+}
+#footerright{
+    
+    display:flex;
+    gap:20px;
+}
