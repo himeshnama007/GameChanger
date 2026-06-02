@@ -20,7 +20,15 @@ html,body{
     width:100%;
     height:100%;
 }
-
+#minicircle{
+    transition:all cubic-bezier(0.075, 0.82, 0.165, 1) 1s; /* transition property se animation ka effect smooth banate he, cubic-bezier se animation ke timing function ko customize karte he, 0.3s se animation ki duration set karte he */
+    width:15px;
+    height:15px;
+    position:absolute;
+    z-index:99999;
+    border-radius:50%;
+    background-color:#fff;
+}
 
 #main{
     width:100%;
