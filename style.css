@@ -29,7 +29,14 @@ html,body{
     border-radius:50%;
     background-color:#fff;
 }
+.bounding{
+    width:fit-content;
+    overflow:hidden; /* bounding container ke andar jo content hai usko overflow hidden karte he, isse h1 ke bahar jo part hai wo visible nahi hoga */
+}
+.bounding .boundingelem{
 
+    transform:translateY(100%);
+}
 #main{
     width:100%;
     height:auto;
