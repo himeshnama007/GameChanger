@@ -143,6 +143,7 @@ html,body{
 }
 .ele{
     position:relative;
+    overflow:visible;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -166,8 +167,10 @@ html,body{
 .ele img{
     opacity:0; /* image ko initially invisible rakhne ke lie opacity 0 karte he, jab animation start hoga tab opacity 1 kar denge */
     height:140%;
+    pointer-events:none; /* image ke upar mouse events ko disable karne ke lie pointer-events none use karte he, isse image ke upar click ya hover nahi hoga */
     position:absolute;
     z-index:999;   /* image ko text ke upar lane ke lie z-index use krte he, jitna bada number hoga utna upar aayega */
+    transform:translate(-50%,-50%); /* image ko center me rakhne ke lie transform translate use karte he, -50% se image ka center point container ke center point ke sath align ho jayega */
      
 
 }

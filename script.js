@@ -64,3 +64,37 @@ function circleMouseFollower(xscale,yscale){
 circleSkewness();
 circleMouseFollower(1, 1);
 firstPageAnim();
+
+//teeno element ko select karo uske baad teeno par ek mousemove lagao jab mouse move hoto ye pata karo ki mouse kaha par hai jiska matlab hai mouse ki x and y position pata karo ab mouse ki x and y position ke badle us image ko show karo and us image ko move karo move karte waqt rotate karo and jaise jaise mouse tez chale vese vese rotation bhi tez ho jaye 
+
+document.querySelectorAll(".ele").forEach(function(ele) {
+    var rotate = 0;
+    var diffrot = 0;
+
+    ele.addEventListener("mouseleave",function(dets){
+        gsap.to(ele.querySelector("img"),{
+            opacity:0,
+            ease:Power3,
+            duration:0.5,
+        });
+    });
+});
+document.querySelectorAll(".ele").forEach(function(ele) {
+    var rotate = 0;
+    var diffrot = 0;
+
+    ele.addEventListener("mousemove",function(dets){
+        var diff = dets.clientY - ele.getBoundingClientRect().top;
+        diffrot = dets.clientX - rotate;
+        rotate =  dets.clientX;
+        
+
+        gsap.to(ele.querySelector("img"),{
+            opacity:1,
+            ease:Power3,
+            top:diff,
+            left:dets.clientX,
+            rotate:gsap.utils.clamp(-20,20,diffrot*0.5),
+        });
+    });
+});
