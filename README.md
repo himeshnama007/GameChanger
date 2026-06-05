@@ -65,7 +65,7 @@ The main goal was to improve animation skills and gain hands-on experience build
 ## 📂 Project Structure
 
 ```text
-GameChanger/
+Cynthia-Ugwu-Clone/
 │
 ├── font/
 │   ├── GeneralSans-Regular.otf
@@ -107,13 +107,13 @@ While building this project, I gained practical experience in:
 ### Clone the repository
 
 ```bash
-git clone https://github.com/himeshnama007/GameChanger.git
+git clone https://github.com/himeshnama007/Cynthia-Ugwu-Clone.git
 ```
 
 ### Navigate to the project folder
 
 ```bash
-cd GameChanger
+cd Cynthia-Ugwu-Clone
 ```
 
 ### Run the project
